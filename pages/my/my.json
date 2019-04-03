@@ -1,0 +1,8 @@
+{
+    "usingComponents":{
+        "t-button":"../../components/image-button/index",
+        "t-preview":"../../components/preview/index"
+    },
+    "enablePullDownRefresh":true
+
+}

@@ -1,0 +1,6 @@
+{
+    "usingComponents":{
+        "t-book":"../../components/book/index",
+        "t-search":"../../components/search/index"
+    }
+}

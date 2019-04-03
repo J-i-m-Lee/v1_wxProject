@@ -1,0 +1,15 @@
+<view class="container">
+    <view class="header">
+        <t-episode class="episode" count="{{classicData.index}}" />
+        <view class="like-container">
+            <t-like class="like" bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+            <t-button class="share-btn" open-type="share">
+                <image class="share" slot="img" src="/images/icon/share.png" />
+            </t-button>
+        </view>
+    </view>
+    <t-movie hidden="{{classicData.type != 100}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+    <t-music wx:if="{{classicData.type == 200}}" img="{{classicData.image}}" content="{{classicData.content}}" src="{{classicData.url}}" />
+    <t-essay hidden="{{classicData.type != 300}}" img="{{classicData.image}}" content="{{classicData.content}}" />
+    <t-nav class="nav" bind:left="onNext" bind:right="onPrevious" title="{{classicData.title}}" first="{{first}}" latest="{{latest}}" />
+</view>
